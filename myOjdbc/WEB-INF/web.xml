@@ -1,0 +1,11 @@
+<web-app>
+<!-- input -->
+     <servlet>
+          <servlet-name>input</servlet-name> 
+          <servlet-class>inputData</servlet-class>
+     </servlet>     
+     <servlet-mapping>
+          <servlet-name>input</servlet-name>
+          <url-pattern>/input</url-pattern>
+     </servlet-mapping>
+</web-app>

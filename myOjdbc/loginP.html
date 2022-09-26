@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student data</title>
+    <style>
+        body{
+            /* background-color: #4c0033;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23af0171' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+
+            background-color: #180e15;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23af0171' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+        } 
+        
+.warppersec0{
+    display: flex;  
+    width: 100%;
+    height: 50px;
+    border: 0px solid #e6e7e7;
+    flex-direction: row;  
+}
+.logoD{
+    width: 35%;
+    height: 150px;
+    border: 0px solid #e6e7e7;
+}
+.spaceD{
+    width: 5%;
+    height: 150px;
+    border: 0px solid #e6e7e7;
+}
+.contentD{
+    display: flex;
+    width: 55%;
+    height: 150px;
+    border: 0px solid #e6e7e7;
+    justify-content:space-around;
+}
+.sec1{
+    display: grid;
+    place-items: center;
+    align-content: center;
+
+
+    /* 191919
+    2D4263
+    041C32
+    04293A
+    191A19
+    1E5128 */
+}
+.h1_logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #e6e7e7 ;
+    font-size: 35px;
+    
+}
+.h1_attr{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #e6e7e7 ;
+    font-size: 35px;
+}
+
+.h1_attr:hover{
+    color: #ec41ab;
+    font-size: 36px;
+    
+}
+.separatorD{
+
+    position: fixed;
+    height: 150px;
+    border: 0px solid #e6e7e7;
+    color: #ec41ab ;
+    font-size: 65px;
+    margin-left: 220px;
+    margin-top: 25px;
+    
+}
+
+.wrappersec1{
+    position: relative;
+    margin-left: 20px;
+    margin-top: -30px;
+    
+    width: 300px;
+    height: 300px;
+    background-color: #191a194b;   
+    border-left: white solid;
+    border-top: white solid;
+
+    border-right: rgb(236, 23, 226) solid;
+    border-bottom: #ec41ab solid;
+    
+     
+}
+.wrapper_ssec1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #0a0a0a7e;
+    top: 200px;
+    border-right: white solid;
+    border-bottom: white solid;
+
+    border-left: #ec41ab solid;
+    border-top: #ec41ab solid;
+
+    
+}
+.imgDiv{
+    position:absolute;
+    opacity: 0.6;
+}
+.hdiv{
+    display: block;
+    position: absolute;
+}
+.formDivsec1{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 137px;
+        
+}
+
+.navsec1{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.head-text{
+    width: 100%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px; 
+    color: #ec41ab;
+    font-weight: 900;
+
+    
+}
+.subAlert{
+    opacity: 0;
+    position: fix;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e6e7e7;
+}
+    </style>
+</head>
+<body>
+    <section >
+        <div class="warppersec0">
+            <div class="logoD">
+                <a style="text-decoration: none;" href="loginP.html">
+                <h1 class="h1_logo" style="color:#ca41ec ;">Database</h1><h1 class="h1_logo" style="font-size: 35px; margin-top: -40px;">Connectivity</h1>
+                </a>
+            </div>
+            <div class="separatorD">|</div>
+            <div class="spaceD"></div>
+            <div class="contentD">
+                <a style="text-decoration: none;" href="#">
+                    <h1 class="h1_attr" style="margin-top: 60px; cursor: pointer;">Search</h1>
+                
+                </a>
+                <a style="text-decoration: none;" href="modifyEntriesnew.jsp">
+                    <h1 class="h1_attr" style="margin-top: 60px; cursor: pointer;">Modify</h1>
+                
+                </a>
+                <a style="text-decoration: none;" href="displayEntries.jsp">
+                    <h1 class="h1_attr" style="margin-top: 60px; cursor: pointer;">Display</h1>
+            
+                </a>
+                </div>
+        </div>
+    </section>
+    <section class="sec1">
+    <div class="wrapper_ssec1">
+    <div class="wrappersec1">
+        <div class="hdiv">
+            <div class="navsec1">
+                <p class="head-text">Student Data Form</p>
+            </div>
+        </div>
+        <div class="formDivsec1">
+        
+        <form method="get" action="input">
+            <!-- <label for="fname" style=" margin: 20px; font-size: 20px;"><strong>User Name:</strong></label> -->
+            <div style="display:flex ;">
+                <div>
+                    <input type="text" style="font-style:normal ; font-size: 15px; color: rgb(253, 253, 253); background-color: #a032bb; border: rgb(240, 218, 248) solid; margin: 10px; height: 30px;" placeholder="Enrollment Number"   name="enrno">    
+                </div>
+                <!-- <div style="margin-top:15px; margin-left: -40px; ">
+                    <img width="27px" height="27px" src="/ojdbc_entry/resource/images/user.png" alt="user"><br>
+                </div> -->
+            </div>
+            <!-- <input type="text" style="margin: 10px; height: 30px;" placeholder="user id"   name="user"> <img style="padding-top: 30px;" width="30px" height="30px" src="/AdvjPrac/nC/user.png" alt="user"><br>
+            <label for="rollno" style=" margin: 20px; font-size: 20px;"><strong>Password: &nbsp</strong></label> -->
+            
+            <div style="display:flex ;">
+                <div>
+                    <input type="text" placeholder="Your Name" style="font-style:normal ; font-size: 15px; color: rgb(253, 253, 253); background-color: #ca41ec; border: rgb(240, 218, 248) solid; margin: 10px; height: 30px;"  name="stuname" /> <br>
+                </div>
+                <!-- <div style="margin-top:15px; margin-left: -40px; ">
+                    <img width="27px" height="27px" src="/ojdbc_entry/resource/images/key.png" alt="user"><br>
+                </div> -->
+            </div>
+            
+            <input style="cursor: pointer; border-right: #ec41ab solid; border-left: #ec41ab solid; border-top: white solid; border-bottom: white solid; font-family:Helvetica; font-size: 30px; margin: 10px; margin-left: 10px; width:180px; height: 65px; background-color: #3F4E4F; color:#ec41ab" type="submit" value="Submit">
+        </form>
+        </div>  
+        <div class="subAlert">
+            1
+        </div>
+    </div>
+    </div> 
+    </section>
+</body>
+</html>
